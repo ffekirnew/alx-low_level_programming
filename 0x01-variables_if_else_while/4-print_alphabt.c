@@ -12,9 +12,9 @@ int main(void)
 	{
 		if (a != 101 && a != 113)
 		{
-			printf("%c", a);
+			putchar(a);
 		}
 	}
-	printf("%c\n", a);
+	putchar(10);
 	return (0);
 }

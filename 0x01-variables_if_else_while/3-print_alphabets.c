@@ -10,12 +10,12 @@ int main(void)
 
 	for (a = 97; a < 123; a++)
 	{
-		printf("%c", a);
+		putchar(a);
 	}
-	for (a = 65; a < 90; a++)
+	for (a = 65; a < 91; a++)
 	{
-		printf("%c", a);
+		putchar(a);
 	}
-	printf("%c\n", a);
+	putchar(10);
 	return (0);
 }

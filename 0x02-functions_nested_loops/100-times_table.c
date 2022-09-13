@@ -17,14 +17,14 @@ void print_times_table(int n)
 			for (j = 0; j <= n; j++)
 			{
 				value = i * j;
-				else if (j != 0)
+				if (j != 0)
 				{
 					_putchar(',');
 					_putchar(' ');
 				}
-				if (j == 0):
+				if (j == 0)
 				{
-					_putchar('0' + 0);
+					_putchar('0');
 				}
 				else if (value < 10)
 				{

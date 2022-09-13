@@ -2,6 +2,7 @@
 
 /**
  * _islower - checks if the given letter c is a small letter
+ * @c: any charachter int
  *
  * Return: Success 1, Failure 0
  */

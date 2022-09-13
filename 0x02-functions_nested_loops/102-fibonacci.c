@@ -22,5 +22,5 @@ int main(void)
 		f2 = auxiliary;
 	}
 	printf("%ld\n", f1 + f2);
-	return(0);
+	return (0);
 }

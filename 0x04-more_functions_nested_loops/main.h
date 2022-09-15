@@ -1,4 +1,5 @@
 int _putchar(char);
+void print_square(int);
 void print_diagonal(int);
 void print_line(int);
 void more_numbers(void);

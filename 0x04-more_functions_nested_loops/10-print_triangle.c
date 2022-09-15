@@ -9,7 +9,7 @@
 void print_triangle(int size)
 {
 	int height, space, hashtag;
-	
+
 	if (size > 0)
 	{
 		for (height = 0; height < size; height++)

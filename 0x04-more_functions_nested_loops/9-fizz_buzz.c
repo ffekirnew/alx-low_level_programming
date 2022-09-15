@@ -3,7 +3,7 @@
 /**
  * main - prints the numbers from 0 - 100 following fizz buzz rules
  *
- * Return - Always 0
+ * Return: Always 0
  */
 int main(void)
 {

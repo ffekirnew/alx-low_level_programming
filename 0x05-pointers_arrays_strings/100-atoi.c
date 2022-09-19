@@ -24,6 +24,10 @@ int _atoi(char *s)
 		{
 			sign *= -1;
 		}
+		else if ((s[index] > 57 || s[index] < 48) && started == 1)
+		{
+			break;
+		}
 		else if (s[index] < 58 && s[index] > 47)
 		{
 			started = 1;

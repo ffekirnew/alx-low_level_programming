@@ -3,6 +3,8 @@
 
 /**
  * _strcpy - modifies the value of one of the strings and returns that value
+ * @dest: a string
+ * @src: a string
  *
  * Return: char
  */

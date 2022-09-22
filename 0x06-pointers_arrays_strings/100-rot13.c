@@ -17,12 +17,10 @@ char *rot13(char *a)
 			if (a[ind] >= 'A' && a[ind] <= 'Z')
 			{
 				a[ind]  = (a[ind] - 65 + 13) % 26 + 65;
+				break;
 			}
-			else
-			{
-				a[ind]  = (a[ind] - 97 + 13) % 26 + 97;
-			}
-			ind++;
+			a[ind]  = (a[ind] - 97 + 13) % 26 + 97;
+			break;
 		}
 		ind++;
 	}

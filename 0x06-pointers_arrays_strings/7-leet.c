@@ -8,36 +8,23 @@
  */
 char *leet(char *a)
 {
-	int ind = 0;
+	char chars[] = "a4A4e3E3l1L1o0O0t7T7";
+	int a_ind, chars_ind;
 
-	while (a[ind] > 0)
+	a_ind = 0;
+	while (a[a_ind] > 0)
 	{
-		while (a[ind] == 'a' || a[ind] == 'A')
+		chars_ind = 0;
+		while (chars[chars_ind] > 0)
 		{
-			a[ind] = '4';
-			ind++;
+			if (chars[chars_ind] == a[a_ind])
+			{
+				a[a_ind] = chars[chars_ind + 1];
+				break;
+			}
+			chars_ind++;
 		}
-		while (a[ind] == 'e' || a[ind] == 'E')
-		{
-			a[ind] = '3';
-			ind++;
-		}
-		while (a[ind] == 't' || a[ind] == 'T')
-		{
-			a[ind] = '7';
-			ind++;
-		}
-		while (a[ind] == 'l' || a[ind] == 'L')
-		{
-			a[ind] = '1';
-			ind++;
-		}
-		while (a[ind] == 'o' || a[ind] == 'O')
-		{
-			a[ind] = '0';
-			ind++;
-		}
-		ind++;
+		a_ind++;
 	}
 	return (a);
 }

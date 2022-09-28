@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _puts_recursion - prints a string onto the screen
@@ -9,22 +10,16 @@
  */
 void _puts_recursion(char *s)
 {
+	char next[500];
+
 	if (s[0] == 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		char next[500];
-		int ind = 1;
-
 		_putchar(s[0]);
-		while (s[ind] > 0)
-		{
-			next[ind-1] = s[ind];
-			ind++;
-		}
-		next[ind-1] = 0;
+		strcpy(next, s + 1);
 		_puts_recursion(next);
 	}
 }

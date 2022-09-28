@@ -11,13 +11,13 @@
  */
 int sqrt_brute_force(int a, int b)
 {
-	if (a == b)
-	{
-		return (-1);
-	}
-	else if (a * a == b)
+	if (a * a == b)
 	{
 		return (a);
+	}
+	else if (a == b)
+	{
+		return (-1);
 	}
 	else
 	{

@@ -14,12 +14,12 @@ char *create_array(unsigned int size, char c)
 	char *answer;
 	unsigned int i = 0;
 
-	answer = malloc(sizeof(char) * (size + 1));
+	answer = malloc(sizeof(char) * (size));
 	if (size == 0 || answer == NULL)
 	{
 		return (NULL);
 	}
-	while (i < size + 1)
+	while (i < size)
 	{
 		answer[i] = c;
 		i++;

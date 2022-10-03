@@ -3,6 +3,7 @@
 
 /**
  * free_grid - frees a grid
+ * @grid: the grid to be freed
  * @height: the height of the grid
  *
  * Return: void

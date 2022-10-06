@@ -36,5 +36,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		counter++;
 		index++;
 	}
+	answer[counter] = 0;
 	return (answer);
 }

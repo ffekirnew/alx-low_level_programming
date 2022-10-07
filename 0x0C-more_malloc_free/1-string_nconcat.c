@@ -23,14 +23,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	}
 
-	while (s1[counter])
+	while (s1[counter] and s1 != NULL)
 	{
 		answer[index] = s1[counter];
 		counter++;
 		index++;
 	}
 	counter = 0;
-	while (s2[counter] && counter < n)
+	while (s2[counter] && counter < n && s2 != NULL)
 	{
 		answer[index] = s2[counter];
 		counter++;

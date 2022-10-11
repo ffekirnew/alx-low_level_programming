@@ -8,6 +8,7 @@
 int main(void)
 {
 	char *name = __FILE__;
+
 	if (name == NULL)
 	{
 		return (1);

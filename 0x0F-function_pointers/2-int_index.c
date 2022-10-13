@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 /**
  * int_index - searches for an integer
  * @size: number of elements in the array
@@ -14,12 +16,15 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		return (-1);
 	}
-	for (index = 0; index < size; index++)
+	else if (array != NULL && cmp != NULL)
 	{
-		result = cmp(array[index]);
-		if (result != 0)
+		for (index = 0; index < size; index++)
 		{
-			return (index);
+			result = cmp(array[index]);
+			if (result != 0)
+			{
+				return (index);
+			}
 		}
 	}
 	return (-1);

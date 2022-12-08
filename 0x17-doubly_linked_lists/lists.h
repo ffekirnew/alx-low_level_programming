@@ -1,7 +1,8 @@
+#include <stddef.h>
+
 #ifndef _DOUBLY_LINKED_LIST_HEADER_
 #define _DOUBLY_LINKED_LIST_HEADER_
 
-#include <stddef.h>
 /**
  * struct dlistint_s - doubly linked list
  * @n: integer
@@ -18,10 +19,26 @@ typedef struct dlistint_s
 	struct dlistint_s *next;
 } dlistint_t;
 
-/* task 0*/
+/* task 0 */
 size_t print_dlistint(const dlistint_t *h);
 
 /* task 1 */
 size_t dlistint_len(const dlistint_t *h);
+
+/* task 4 */
+void free_dlistint(dlistint_t *head);
+
+/* task 5 */
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
+
+/* task 6 */
+int sum_dlistint(dlistint_t *head);
+
+/* task 2 */
+dlistint_t *add_dnodeint(dlistint_t **head, const int n);
+
+/* task 3 */
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
+
 
 #endif

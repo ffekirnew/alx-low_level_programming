@@ -1,4 +1,5 @@
 #include <stddef.h>
+#include <stdlib.h>
 
 #ifndef _DOUBLY_LINKED_LIST_HEADER_
 #define _DOUBLY_LINKED_LIST_HEADER_

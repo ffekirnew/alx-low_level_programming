@@ -1,5 +1,6 @@
 #ifndef _DYNAMIC_LIBRARY_HEADER_
 #define _DYNAMIC_LIBRARY_HEADER_
+#define EXIT_SUCCESS 0
 
 int _putchar(char c);
 int _islower(int c);

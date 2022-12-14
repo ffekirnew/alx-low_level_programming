@@ -9,7 +9,7 @@
 */
 char *to_binary(unsigned long int n)
 {
-	int length = 0, n_copy = n;
+	unsigned int length = 0, n_copy = n;
 	char *binary;
 
 	while (n_copy)

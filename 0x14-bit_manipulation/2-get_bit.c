@@ -7,7 +7,7 @@
  *
  * Return: the string or NULL if malloc failed
 */
-char *to_binary(int n)
+char *to_binary(unsigned long int n)
 {
 	int length = 0, n_copy = n;
 	char *binary;
